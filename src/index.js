@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./containers/App";
 import "./index.css";
 
-//리덕스 관련 불러오기
+//리덕스 관련 불러오기.
 import { createStore } from "redux";
 import reducers from "./reducers";
 import { Provider } from "react-redux";
