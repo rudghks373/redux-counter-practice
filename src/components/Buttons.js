@@ -7,10 +7,10 @@ const Buttons = ({ onCreate, onRemove }) => {
   return (
     <div className="Buttons">
       <div className="btn add" onClick={onCreate}>
-        생성
+        생성하기
       </div>
       <div className="btn remove" onClick={onRemove}>
-        제거
+        제거하기
       </div>
     </div>
   );
