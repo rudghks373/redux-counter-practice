@@ -28,7 +28,7 @@ const initialState = {
 };
 
 function counter(state = initialState, action) {
-  // 레퍼런스 생성
+  // 레퍼런스 생성.
   const { counters } = state;
 
   switch (action.type) {
@@ -49,7 +49,7 @@ function counter(state = initialState, action) {
     case types.INCREMENT:
       return {
         counters: [
-          ...counters.slice(0, action.index), // 선택한 인덱스의 전 아이템들
+          ...counters.slice(0, action.index), // 선택한 인덱스의 전 아이템들.
           {
             ...counters[action.index], // 기존 객체에
             number: counters[action.index].number + 1 // 새 number 값 덮어쓰기
